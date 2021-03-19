@@ -24,3 +24,8 @@ body{
   .center-text{
     text-align: center;
   }
+  .link_blog{
+    background-color: ivory;
+    margin: 1% 35% 1% 35%;
+    border-radius: 5px;
+  }
