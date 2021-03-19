@@ -2,9 +2,25 @@ body{
   background-color: #0d1b2a;
   color: #ffffff;
   font-family: sans-serif;
+  text-align: center;
 }
-
 
 .select-color{
   color: #6d5da7;
 }
+
+.list{
+    background-color: #6d5da71f;
+    margin: 35px 20% 35px 20%;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 25px;
+  }
+
+  .photo-border{
+    border-radius: 7px;
+  }
+
+  .center-text{
+    text-align: center;
+  }
