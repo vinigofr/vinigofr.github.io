@@ -1,31 +1,21 @@
 body{
+  text-decoration: none;
   background-color: #0d1b2a;
   color: #ffffff;
   font-family: Poppins, sans-serif;
-  text-align: center;
+  /* text-align: center; */
 }
 
-.select-color{
-  color: #6d5da7;
+#foto-principal {
+  border-radius: 10px;
+  background-color: red;
+  padding: 5px;
 }
 
-.list{
-    background-color: #6d5da71f;
-    margin: 35px 20% 35px 20%;
-    border-radius: 5px;
-    text-align: center;
-    line-height: 25px;
-  }
+.cabecalho {
+  background-color: royalblue;
+}
 
-  .photo-border{
-    border-radius: 7px;
-  }
-
-  .center-text{
-    text-align: center;
-  }
-  .link_blog{
-    background-color: ivory;
-    margin: 1% 35% 1% 35%;
-    border-radius: 5px;
-  }
+.cabecalho nav p a:hover {
+  background-color: green;
+}
