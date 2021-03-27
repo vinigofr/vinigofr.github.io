@@ -6,16 +6,55 @@ body{
   /* text-align: center; */
 }
 
-#foto-principal {
-  border-radius: 10px;
-  background-color: red;
-  padding: 5px;
+.cabecalho h1, nav p{
+  border-radius: 5px;
+  padding: 2px 5px 2px 5px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
-.cabecalho {
+.cabecalho{
+  font-size: 15px;
+  text-align: center;
   background-color: royalblue;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-.cabecalho nav p a:hover {
-  background-color: green;
+.cabecalho img {
+  margin: 1% 35px 1%;
+  float: left;
+  border-radius: 65px;
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 10px;
 }
+
+.cabecalho nav p {
+  padding: 5px;
+  margin: 1px 3px 1px;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.cabecalho nav p:hover, :visited{
+  transition-duration: 0.3s;
+  text-decoration: underline;
+  margin: 1px 3px 1px;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(0, 128, 0, 0.548);
+  font-weight: 700;
+}
+
+.line-rm {
+  text-decoration: none;
+}
+
+main {
+  margin: 180px 85px 180px 85px;
+}
+
+
