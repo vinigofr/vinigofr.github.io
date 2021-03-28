@@ -1,0 +1,71 @@
+body {
+  background-color: rgb(253, 251, 251);
+  font-family: sans-serif;
+  font-size: medium;
+  color: black;
+  line-height: 20px;
+  word-spacing: 2px;
+}
+
+
+#cabecalho {
+  background-color: rgb(18, 146, 14);
+  text-align: center;
+  top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+
+}
+
+#minha_foto {
+  position: fixed;
+  border-radius: 45px;
+  border-style: solid;
+}
+
+#principal {
+  display: grid;
+  margin-top: 125px;
+  margin-left: 19%;
+  margin-right: 50px;
+}
+
+/* Para resolver esta área de margin abaixo, foi consultada a documentação da Mozilla
+*Source: https://developer.mozilla.org/pt-BR/docs/Web/CSS/margin */
+
+.lado-esquerdo , .lado-direito , .aprendidas , .aprender {
+  padding: 2px;
+  border-style: solid;
+  border-radius: 15px;
+  margin: 10px 50px 25px;
+  display: inline-block;
+  width: 35%;
+}
+
+#licoes {
+  display: inline-flex;
+}
+
+.artigo {
+  display: inline-flex;
+}
+
+#rodape {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#navegacao {
+  background-color: tomato;
+}
+
+#navegacao a {
+  color: white;
+  text-decoration: none;
+}
+
+#navegacao a:hover {
+  text-decoration: underline;
+  color: rgba(93, 253, 0, 0.63);
+}
