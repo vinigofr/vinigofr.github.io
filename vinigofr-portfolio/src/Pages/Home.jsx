@@ -4,7 +4,6 @@ function Home() {
   const [page, setPage] = useState('home'); 
   return (
     <div>
-      {console.log(page)}
       <Header setPage={ setPage } />
       { page }
     </div>
