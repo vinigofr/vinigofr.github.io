@@ -28,8 +28,8 @@ export default function Header(props) {
   return (
       <header className="main-header">
         {headerButtons.map(({text, value}) => (
-          <p 
-          className="main-header" 
+          <p
+          className="pointer"
           id={ value }
           onClick={ (e) => choosePage(e.target) }
           >

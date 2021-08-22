@@ -1,10 +1,12 @@
-.pointer {
+.pointer:hover {
   cursor: pointer;
 }
 
 .main-header {
+  color: whitesmoke;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: red;
-  box-shadow: 0px 10px 50px rgba(50, 0, 0, 0.5);
+  box-shadow: 0px 10px 50px rgba(50, 0, 255, 0.5);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.753), rgba(50, 0, 255, 0.5));
 }
