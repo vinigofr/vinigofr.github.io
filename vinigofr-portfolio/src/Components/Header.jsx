@@ -15,8 +15,7 @@ const headerButtons = [{
 {
   text: 'LinkedIn',
   value: 'linkedin',
-}
-]
+}]
 
 export default function Header(props) {
   const { setPage } = props;
@@ -27,6 +26,8 @@ export default function Header(props) {
 
   return (
       <header className="main-header">
+        <h1 style={{ fontSize: '50px' }}>Vinicius Gouveia</h1>
+        <div>
         {headerButtons.map(({text, value}) => (
           <p
           className="pointer"
@@ -36,6 +37,7 @@ export default function Header(props) {
             {text}
           </p>
         ))}
+        </div>
       </header>
   );
 }
