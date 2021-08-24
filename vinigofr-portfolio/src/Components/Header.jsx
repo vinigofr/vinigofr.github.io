@@ -27,7 +27,9 @@ export default function Header(props) {
 
   return (
       <header className="home-header">
-        <h1 className="write-effect">Vinicius Gouveia</h1>
+        <div className="write-effect">
+          <h1>Vinicius Gouveia</h1>
+        </div>
         <div className="header-options">
         {headerButtons.map(({text, value}) => (
           <p

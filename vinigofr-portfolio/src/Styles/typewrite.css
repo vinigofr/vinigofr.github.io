@@ -1,5 +1,4 @@
 .write-effect {
-  flex-grow: 1;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .1em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
