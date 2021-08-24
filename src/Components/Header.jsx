@@ -1,6 +1,6 @@
 import React from 'react';
-import '../general-style.css';
-import '../Styles/typewrite.css';
+import ViniciusTitle from './ViniciusTitle';
+import '../Styles/general-style.css';
 
 const headerButtons = [{
   text: 'Projetos',
@@ -27,15 +27,13 @@ export default function Header(props) {
 
   return (
       <header className="home-header">
-        <div className="write-effect">
-          <h1>Vinicius Gouveia</h1>
-        </div>
+        <ViniciusTitle />
         <div className="header-options">
         {headerButtons.map(({text, value}) => (
           <p
-          className="pointer"
-          id={ value }
-          onClick={ (e) => choosePage(e.target) }
+            className="pointer"
+            id={ value }
+            onClick={ (e) => choosePage(e.target) }
           >
             {text}
           </p>
