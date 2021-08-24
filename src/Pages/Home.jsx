@@ -6,7 +6,7 @@ function Home() {
 
   return (
     <div>
-      <Header setPage={ setPage } />
+      <Header setPage={ setPage } currPage={ page } />
       { page === 'home' ? 'Welcome' : null }
       { page === 'projects' ? <Projects /> : null }
       { page === 'github' ? 'github' : null }

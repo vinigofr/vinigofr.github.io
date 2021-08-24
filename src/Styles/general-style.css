@@ -1,0 +1,17 @@
+.pointer:hover {
+  cursor: pointer;
+}
+
+.header-options {
+  flex-grow: 2;
+  color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.home-header {
+  display: flex;
+  box-shadow: 0px 10px 50px rgba(50, 0, 255, 0.5);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.753), rgba(50, 0, 255, 0.5));
+}

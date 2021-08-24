@@ -19,7 +19,7 @@ const headerButtons = [{
 }]
 
 export default function Header(props) {
-  const { setPage } = props;
+  const { setPage, currPage } = props;
 
   function choosePage(page) {
     setPage(page.id);
@@ -31,6 +31,7 @@ export default function Header(props) {
         <div className="header-options">
         {headerButtons.map(({text, value}) => (
           <p
+            style={ currPage === value ? { textDecoration: 'underline' } : null }
             className="pointer"
             id={ value }
             onClick={ (e) => choosePage(e.target) }
