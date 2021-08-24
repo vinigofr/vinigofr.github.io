@@ -1,5 +1,6 @@
 import React from 'react';
 import '../general-style.css';
+import '../Styles/typewrite.css';
 
 const headerButtons = [{
   text: 'Projetos',
@@ -25,9 +26,9 @@ export default function Header(props) {
   };
 
   return (
-      <header className="main-header">
-        <h1 style={{ fontSize: '50px' }}>Vinicius Gouveia</h1>
-        <div>
+      <header className="home-header">
+        <h1 className="write-effect">Vinicius Gouveia</h1>
+        <div className="header-options">
         {headerButtons.map(({text, value}) => (
           <p
           className="pointer"
