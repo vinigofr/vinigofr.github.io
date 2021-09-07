@@ -4,14 +4,21 @@ import styled from "styled-components";
 import linkedin from "../../icons/linkedin.svg";
 import "../../Styles/RightNav.css";
 
+const NewNav = styled.div`
+  display: flex;
+  gep: 1em;
+  align-items: center;
+  flex-flow: row nowrap;
+
+  @media (max-width: 768px) {
+    flex-flow: column nowrap;
+    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'}
+  }
+`;
+
 function RightNav(props) {
   const { setPage, currPage, open } = props;
 
-  const NewNav = styled.div`
-    @media (max-width: 768px) {
-      display: none;
-    }
-  `;
 
   function choosePage(page) {
     setPage(page.id);
