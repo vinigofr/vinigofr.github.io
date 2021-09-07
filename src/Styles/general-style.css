@@ -18,7 +18,8 @@
   justify-content: space-between;
   align-items: center;
   padding-left: 25px;
-  /* box-shadow: 0px 10px 50px rgba(50, 0, 255, 0.5); */
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.753), rgba(50, 0, 255, 0.5)); */
   background-color: rgb(113, 18, 177);
 }
+
+/* @media screen and (min-width: 768px) { */
+/* } */
