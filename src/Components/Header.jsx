@@ -1,7 +1,7 @@
 import React from "react";
 import ViniciusTitle from "./ViniciusTitle";
 import "../Styles/general-style.css";
-import RightNav from "./Nav/RightNav";
+import Burger from "./Nav/Burger";
 
 export default function Header(props) {
   const { setPage, currPage } = props;
@@ -9,7 +9,7 @@ export default function Header(props) {
   return (
     <header className="home-header">
       <ViniciusTitle />
-      <RightNav setPage={setPage} currPage={currPage} />
+      <Burger setPage={setPage} currPage={currPage}/>
     </header>
   );
 }

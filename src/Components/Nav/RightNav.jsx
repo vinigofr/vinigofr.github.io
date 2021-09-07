@@ -1,61 +1,72 @@
-import React from 'react'
-import github from '../../icons/github.svg'
-import linkedin from '../../icons/linkedin.svg';
-import '../../Styles/RightNav.css';
+import React from "react";
+import github from "../../icons/github.svg";
+import styled from "styled-components";
+import linkedin from "../../icons/linkedin.svg";
+import "../../Styles/RightNav.css";
 
 function RightNav(props) {
-  const { setPage, currPage } = props;
+  const { setPage, currPage, open } = props;
+
+  const NewNav = styled.div`
+    @media (max-width: 768px) {
+      display: none;
+    }
+  `;
 
   function choosePage(page) {
     setPage(page.id);
   }
 
   return (
-    <div className="header-options">
-        <p
-          style={currPage === "home" ? { textDecoration: "underline" } : null}
+    <NewNav open={ open } className="header-options">
+      <p
+        style={currPage === "home" ? { textDecoration: "underline" } : null}
+        className="pointer"
+        id="home"
+        onClick={(e) => choosePage(e.target)}
+      >
+        Início
+      </p>
+      <p
+        style={currPage === "projects" ? { textDecoration: "underline" } : null}
+        className="pointer"
+        id="projects"
+        onClick={(e) => choosePage(e.target)}
+      >
+        Projetos
+      </p>
+      <p
+        style={currPage === "contact" ? { textDecoration: "underline" } : null}
+        className="pointer"
+        id="contact"
+        onClick={(e) => choosePage(e.target)}
+      >
+        Contato
+      </p>
+      <a href="https://github.com/vinigofr" target="_blank" rel="noreferrer">
+        <img
+          alt="GitHub Link"
+          style={{ width: "40px", height: "40px", color: "pink" }}
           className="pointer"
-          id="home"
-          onClick={(e) => choosePage(e.target)}
-        >
-          Início
-        </p>
-        <p
-          style={currPage === "projects" ? { textDecoration: "underline" } : null}
+          id="github"
+          src={github}
+        />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/vinigofr/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img
+          alt="Linkedin Link"
+          style={{ width: "40px", height: "40px" }}
           className="pointer"
-          id="projects"
-          onClick={(e) => choosePage(e.target)}
-        >
-          Projetos
-        </p>
-        <p
-          style={currPage === "contact" ? { textDecoration: "underline" } : null}
-          className="pointer"
-          id="contact"
-          onClick={(e) => choosePage(e.target)}
-        >
-          Contato
-        </p>
-        <a href="https://github.com/vinigofr" target="_blank" rel="noreferrer">
-          <img
-            alt="GitHub Link"
-            style={{ width: "40px", height: "40px", color: 'pink' }}
-            className="pointer"
-            id="github"
-            src={ github }
-          />
-        </a>
-        <a href="https://www.linkedin.com/in/vinigofr/" target="_blank" rel="noreferrer">
-          <img
-            alt="Linkedin Link"
-            style={{ width: "40px", height: "40px" }}
-            className="pointer"
-            id="linkedin"
-            src={ linkedin }
-          />
-        </a>
-      </div>
-  )
+          id="linkedin"
+          src={linkedin}
+        />
+      </a>
+    </NewNav>
+  );
 }
 
-export default RightNav
+export default RightNav;
