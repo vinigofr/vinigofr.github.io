@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import RightNav from "./RightNav";
+// Créditos à FullStack Mastery por ter disponibilizado o conteúdo que
+// permitiu realizar o "Menu Hamburguer".
+// Fonte: https://www.youtube.com/watch?v=GGkBwpxV7AI
 
 const StyledBurger = styled.div`
   width: 2rem;
@@ -9,6 +12,7 @@ const StyledBurger = styled.div`
   right: 20px;
   display: none;
   z-index: 20;
+  margin-right: 20px;
 
     div {
       border-radius: 10px;
