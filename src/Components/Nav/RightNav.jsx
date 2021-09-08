@@ -2,30 +2,37 @@ import React from "react";
 import github from "../../icons/github.svg";
 import styled from "styled-components";
 import linkedin from "../../icons/linkedin.svg";
-import "../../Styles/RightNav.css";
 
 const NewNav = styled.div`
   display: flex;
-  gep: 1em;
   align-items: center;
   flex-flow: row nowrap;
 
   @media (max-width: 768px) {
-    flex-flow: column nowrap;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'}
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    background-color: rgb(113, 18, 177);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    flex-flow: column wrap;
+    position: fixed;
+    font-weight: bolder;
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   }
 `;
 
 function RightNav(props) {
   const { setPage, currPage, open } = props;
 
-
   function choosePage(page) {
     setPage(page.id);
   }
 
   return (
-    <NewNav open={ open } className="header-options">
+    <NewNav open={open} className="header-options">
       <p
         style={currPage === "home" ? { textDecoration: "underline" } : null}
         className="pointer"

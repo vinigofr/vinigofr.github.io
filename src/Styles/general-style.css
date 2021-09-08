@@ -1,15 +1,18 @@
 .pointer:hover {
   cursor: pointer;
   color: rgb(0, 0, 0);
+  transition: 0.2s;
+  
+}
+
+.pointer:not(:hover) {
+  transition: 0.2s;
 }
 
 .header-options {
-  display: flex;
   width: 500px;
   justify-content: space-around;
-  flex-wrap: wrap;
   color: whitesmoke;
-  align-items: center;
 }
 
 .home-header {
@@ -20,6 +23,3 @@
   padding-left: 25px;
   background-color: rgb(113, 18, 177);
 }
-
-/* @media screen and (min-width: 768px) { */
-/* } */
