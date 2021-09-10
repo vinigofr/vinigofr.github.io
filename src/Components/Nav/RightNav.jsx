@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import MyContext from '../../ContextAPI/MyContext';
 import github from "../../icons/github.svg";
 import styled from "styled-components";
 import linkedin from "../../icons/linkedin.svg";
@@ -26,7 +27,9 @@ const NewNav = styled.div`
 `;
 
 function RightNav(props) {
-  const { setPage, currPage, open } = props;
+  const context = useContext(MyContext);
+  const { page, setPage } = context;
+  const { open } = props;
 
   function choosePage(page) {
     setPage(page.id);
@@ -35,7 +38,7 @@ function RightNav(props) {
   return (
     <NewNav open={open} className="header-options">
       <p
-        style={currPage === "home" ? { textDecoration: "underline" } : null}
+        style={page === "home" ? { textDecoration: "underline" } : null}
         className="pointer"
         id="home"
         onClick={(e) => choosePage(e.target)}
@@ -43,7 +46,7 @@ function RightNav(props) {
         Início
       </p>
       <p
-        style={currPage === "projects" ? { textDecoration: "underline" } : null}
+        style={page === "projects" ? { textDecoration: "underline" } : null}
         className="pointer"
         id="projects"
         onClick={(e) => choosePage(e.target)}
@@ -51,7 +54,7 @@ function RightNav(props) {
         Projetos
       </p>
       <p
-        style={currPage === "contact" ? { textDecoration: "underline" } : null}
+        style={page === "contact" ? { textDecoration: "underline" } : null}
         className="pointer"
         id="contact"
         onClick={(e) => choosePage(e.target)}

@@ -53,7 +53,7 @@ function Burger() {
         <div />
         <div />
         <div />
-    </StyledBurger>
+      </StyledBurger>
      <RightNav open={open} />
     </>
   );
