@@ -23,6 +23,10 @@
   background-color: rgb(113, 18, 177);
 }
 
+.main-backgrounds {
+  height: calc(100vh - 4rem);
+}
+
 @media screen and (max-width: 768px) {
   #github, #linkedin, #projects, #contact, #home {
     border-radius: 5px;

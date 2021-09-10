@@ -3,6 +3,7 @@ import MyContext from '../ContextAPI/MyContext';
 import Header from '../Components/Header';
 import Projects from '../Components/Projects';
 import Presentation from '../Components/Presentation';
+import Contact from '../Components/Contact';
 
 function Home() {
   const context = useContext(MyContext);
@@ -13,7 +14,7 @@ function Home() {
       <Header/>
       { page === 'home' ? <Presentation /> : null }
       { page === 'projects' ? <Projects /> : null }
-      { page === 'contact' ? 'contato' : null }
+      { page === 'contact' ? <Contact /> : null }
     </div>
   )
 }
