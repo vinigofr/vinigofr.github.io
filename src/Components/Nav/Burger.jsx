@@ -6,10 +6,11 @@ import RightNav from "./RightNav";
 // Fonte: https://www.youtube.com/watch?v=GGkBwpxV7AI
 
 const StyledBurger = styled.div`
-  // width: 2rem;
+  position: fixed;
+  width: 2rem;
   height: 2rem;
-  top: 15px;
-  right: 20px;
+  top: 1rem;
+  right: 0.01rem;
   display: none;
   z-index: 20;
   margin-right: 20px;

@@ -21,6 +21,7 @@ const NewNav = styled.div`
     position: fixed;
     font-weight: bolder;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+    transition: transform 0.3s ease-in-out;
   }
 `;
 
