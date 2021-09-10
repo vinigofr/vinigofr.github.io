@@ -29,7 +29,7 @@ const NewNav = styled.div`
 function RightNav(props) {
   const context = useContext(MyContext);
   const { page, setPage } = context;
-  const { open } = props;
+  const { open, setOpen } = props;
 
   function choosePage(page) {
     setPage(page.id);
@@ -41,7 +41,7 @@ function RightNav(props) {
         style={page === "home" ? { textDecoration: "underline" } : null}
         className="pointer"
         id="home"
-        onClick={(e) => choosePage(e.target)}
+        onClick={(e) => {choosePage(e.target); setOpen(!open)}}
       >
         Início
       </p>
@@ -49,7 +49,7 @@ function RightNav(props) {
         style={page === "projects" ? { textDecoration: "underline" } : null}
         className="pointer"
         id="projects"
-        onClick={(e) => choosePage(e.target)}
+        onClick={(e) => {choosePage(e.target); setOpen(!open)}}
       >
         Projetos
       </p>
@@ -57,7 +57,7 @@ function RightNav(props) {
         style={page === "contact" ? { textDecoration: "underline" } : null}
         className="pointer"
         id="contact"
-        onClick={(e) => choosePage(e.target)}
+        onClick={(e) => {choosePage(e.target); setOpen(!open)}}
       >
         Contato
       </p>
