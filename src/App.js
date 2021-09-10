@@ -7,7 +7,7 @@ function App() {
   const [page, setPage] = React.useState('home');
 
   const websiteContext = {
-    page, setPage
+    page, setPage // <-- Indicador de página atual
   }
 
   return (
