@@ -61,12 +61,11 @@ function RightNav(props) {
       >
         Contato
       </p>
-      <a href="https://github.com/vinigofr" target="_blank" rel="noreferrer">
+      <a href="https://github.com/vinigofr" target="_blank" rel="noreferrer" id="github">
         <img
           alt="GitHub Link"
           style={{ width: "40px", height: "40px", color: "pink" }}
           className="pointer"
-          id="github"
           src={github}
         />
       </a>
@@ -74,12 +73,12 @@ function RightNav(props) {
         href="https://www.linkedin.com/in/vinigofr/"
         target="_blank"
         rel="noreferrer"
+        id="linkedin"
       >
         <img
           alt="Linkedin Link"
           style={{ width: "40px", height: "40px" }}
           className="pointer"
-          id="linkedin"
           src={linkedin}
         />
       </a>

@@ -2,7 +2,6 @@
   cursor: pointer;
   color: rgb(0, 0, 0);
   transition: 0.2s;
-  
 }
 
 .pointer:not(:hover) {
@@ -22,4 +21,13 @@
   align-items: center;
   padding-left: 25px;
   background-color: rgb(113, 18, 177);
+}
+
+@media screen and (max-width: 768px) {
+  #github, #linkedin, #projects, #contact, #home {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgb(140, 74, 184);
+  }
 }
