@@ -1,9 +1,30 @@
 import React from 'react'
+import allProjects from '../Helpers/allProject'
 
 function Projects() {
   return (
     <div>
-      Projetos ainda serão configurados aqui!
+      <h1>Projetos</h1>
+      <div className="projects-section">
+        {
+          allProjects.map((project) => (
+            <div className="project-card">
+              <h3>{project.name}</h3>
+              <p>{project.description}</p>
+              <a 
+                href={project.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Acessar projeto
+              </a>
+              <img src={project.image} alt="Imagem do projeto"/>
+              <p>Tipo do projeto: {`${project.type}`}</p>
+              <p>Tecnologias utilizadas: {`${project.technologies.join(', ')}`}</p>
+            </div>
+          ))
+        }
+      </div>
     </div>
   )
 }

@@ -3,15 +3,15 @@ import React from "react";
 function Presentation() {
   return (
     <div className="main-backgrounds">
-      <h1>Olá, eu sou Vinicius Gouveia 👨🏻‍💻</h1>
+      <h1>Prazer, me chamo Vinicius 👨🏻‍💻</h1>
 
       <main>
         <section>
-          <h3>Desenvolvedor de Software Front-End</h3>
+          <h3>Sou desenvolvedor de Software Front-End</h3>
           <br />
           <h3>
             Atualmente sou estudante de desenvolvimento back-end na Trybe com o
-            objetivo de me tornas um Desenvolvedor de Software FullStack
+            objetivo de me tornar um Desenvolvedor de Software FullStack
           </h3>
         </section>
         <section>

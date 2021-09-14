@@ -34,4 +34,24 @@
     margin: 10px 0;
     background-color: rgb(140, 74, 184);
   }
+
+  .projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin:  0; */
+  }
+
+  .project-card {
+    width: 290px;
+    background-color: rgba(0, 255, 179, 0.226);
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 10px;
+    box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.349);
+  }
+
+  .project-card h3 {
+    font-size: 35px;
+  }
 }
