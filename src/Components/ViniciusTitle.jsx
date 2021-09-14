@@ -5,7 +5,7 @@ function ViniciusTitle() {
   return (
     <div>
       <div className="write-effect my-name">
-        <h1>Vinicius Gouveia</h1>
+        <h1>{`<Vinicius /> Gouveia`}</h1>
       </div>
     </div>
   );
