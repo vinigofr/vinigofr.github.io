@@ -54,4 +54,58 @@
   .project-card h3 {
     font-size: 35px;
   }
+
+  .contact-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 30px 30px;
+    margin: 50px 20px 20px 20px;
+  }
+
+  .contact-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px 10px;
+  }
+
+  /* Esse placeholder deve estar branco
+  para dar efeito no de baixo */
+  .contact-input::placeholder {
+    color: #ffffff;
+  }
+
+  .contact-input:focus {
+    transition: 0.3s;
+    outline: none;
+    background-color: #7112b1b6;
+    color: #ffffff;
+  }
+
+  .contact-input:not(:focus) {
+    transition: 0.3s;
+  }
+
+  .input-label {
+    font-size: 17px;
+    font-family: 'Cabin', 'Times New Roman', Times, serif;
+  }
+
+  .contact-forms button {
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px 10px;
+  }
 }
+
+/* Deixar aqui uma ideia registrada:
+Ao passar o mouse em cima, a imagem sobrepõe
+todo o texto com um transform e zoom no hover
+talvez dê certo mudando o z-index do elemento */
