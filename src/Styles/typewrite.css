@@ -1,0 +1,32 @@
+/* Source: https://css-tricks.com/snippets/css/typewriter-effect/ */
+body {
+  font-family: Cabin;
+}
+
+.my-name {
+  display: flex;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.write-effect {
+  color: whitesmoke;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .01em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0;
+  letter-spacing: .0em; /* Adjust as needed */
+  animation: 
+    typing 2s steps(15, end),
+    blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
