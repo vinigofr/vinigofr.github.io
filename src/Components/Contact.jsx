@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { init, send } from "emailjs-com";
+import Loading from "./Nav/Loading";
+import verifyData from "../Helpers/verifyData";
+
 init("user_3bguTCeUpXJpsAeCpvezS");
 
 function Contact() {
@@ -9,20 +12,51 @@ function Contact() {
     reply_to: "",
   });
 
+  const [stat, setStat] = useState(false);
+
+  const [remaining, setRamaining] = useState({
+    remainingText: 500,
+    max: false
+  });
+
+  useEffect(() => {
+    setRamaining({
+      remainingText: 500 - toSend.message.length,
+      max: toSend.message.length > 500 ? true : false,
+    })
+  }, [toSend]);
+
+
+  const fiveSeconds = (status) => {
+    if (status === "success") {
+      setStat(false);
+    } else {
+      window.open("www.google.com.br", "_blank");
+    }
+  };
+
   const onSubmit = (e) => {
     e.preventDefault();
-    send(
-      "service_r8dnbhc",
-      "template_h3b3zn1",
-      toSend,
-      "user_3bguTCeUpXJpsAeCpvezS"
-    )
-      .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
-      })
-      .catch((err) => {
-        console.log("FAILED...", err);
-      });
+
+    if (verifyData(toSend)) {
+      setStat(true);
+      send(
+        "service_r8dnbhc",
+        "template_h3b3zn1",
+        toSend,
+        "user_3bguTCeUpXJpsAeCpvezS"
+      )
+        .then((response) => {
+          fiveSeconds("success");
+          console.log("SUCCESS!", response.status, response.text);
+        })
+        .catch((err) => {
+          fiveSeconds("failed");
+          console.log("FAILED...", err);
+        });
+    } else {
+      console.log("deu ruim");
+    }
   };
 
   const handleChange = (e) => {
@@ -66,10 +100,15 @@ function Contact() {
             placeholder="Pode ser um feedback, elogio, sugestão. Fique à vontade"
             value={toSend.message}
             onChange={handleChange}
-          />
+            />
         </label>
+        <div>
+        <p style={ {color: `${!remaining.max ? "black" : "red"}` } }>Caracteres restantes: {remaining.remainingText}</p>
+        {console.log(remaining.max)}
+        </div>
         <button type="submit">Enviar</button>
       </form>
+      <Loading stat={stat} />
     </div>
   );
 }

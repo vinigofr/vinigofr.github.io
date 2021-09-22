@@ -56,6 +56,7 @@
   }
 
   .contact-forms {
+    /* background-color: #66026b; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,6 +74,7 @@
     border: 1px solid;
     padding: 10px;
     margin: 10px 10px;
+    box-shadow: 0 0 10px 1px #00000059;
   }
 
   /* Esse placeholder deve estar branco
@@ -85,6 +87,7 @@
     transition: 0.3s;
     outline: none;
     background-color: #7112b1b6;
+    box-shadow: 0 0 10px 5px #7112b157;
     color: #ffffff;
   }
 
