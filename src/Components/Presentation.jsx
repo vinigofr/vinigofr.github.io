@@ -17,7 +17,16 @@ function Presentation() {
         <section>
           <h3>Possuo experiência com as seguintes tecnologias:</h3>
           <br />
-          {['JS','HTML','CSS','React','Jest','ContextAPI','Redux','Git'].join(', ')}
+          {[
+            "JS",
+            "HTML",
+            "CSS",
+            "React",
+            "Jest",
+            "ContextAPI",
+            "Redux",
+            "Git",
+          ].join(", ")}
         </section>
       </main>
     </div>

@@ -19,21 +19,22 @@ const StyledBurger = styled.div`
       border-radius: 10px;
       width: 2rem;
       height: 0.25em;
-      background-color: ${({ open }) => open ? "#fff" : "#fff"};
+      background-color: ${({ open }) => (open ? "#fff" : "#fff")};
       transform-origin: 1px;
       transition: all 0.3s linear;
       
       &:nth-child(1) {
-        transform: ${({open}) => open ? 'rotate(45deg)' : 'rotate(0deg)'};
+        transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0deg)")};
       }
     
       &:nth-child(2) {
-        transform: ${({open}) => open ? 'translate(100%)' : 'translateX(0)'};
-        opacity: ${({open}) => open ? 0 : 1};
+        transform: ${({ open }) =>
+          open ? "translate(100%)" : "translateX(0)"};
+        opacity: ${({ open }) => (open ? 0 : 1)};
       }
     
       &:nth-child(3) {
-        transform: ${({open}) => open ? 'rotate(-45deg)' : 'rotate(0deg)'};
+        transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0deg)")};
       }
     }
   }
@@ -54,7 +55,7 @@ function Burger() {
         <div />
         <div />
       </StyledBurger>
-     <RightNav open={open} setOpen={ setOpen } />
+      <RightNav open={open} setOpen={setOpen} />
     </>
   );
 }

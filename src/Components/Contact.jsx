@@ -16,16 +16,15 @@ function Contact() {
 
   const [remaining, setRamaining] = useState({
     remainingText: 500,
-    max: false
+    max: false,
   });
 
   useEffect(() => {
     setRamaining({
       remainingText: 500 - toSend.message.length,
       max: toSend.message.length > 500 ? true : false,
-    })
+    });
   }, [toSend]);
-
 
   const fiveSeconds = (status) => {
     if (status === "success") {
@@ -100,11 +99,12 @@ function Contact() {
             placeholder="Pode ser um feedback, elogio, sugestão. Fique à vontade"
             value={toSend.message}
             onChange={handleChange}
-            />
+          />
         </label>
         <div>
-        <p style={ {color: `${!remaining.max ? "black" : "red"}` } }>Caracteres restantes: {remaining.remainingText}</p>
-        {console.log(remaining.max)}
+          <p style={{ color: `${!remaining.max ? "black" : "red"}` }}>
+            Caracteres restantes: {remaining.remainingText}
+          </p>
         </div>
         <button type="submit">Enviar</button>
       </form>

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import MyContext from '../../ContextAPI/MyContext';
+import MyContext from "../../ContextAPI/MyContext";
 import github from "../../icons/github.svg";
 import styled from "styled-components";
 import linkedin from "../../icons/linkedin.svg";
@@ -41,7 +41,10 @@ function RightNav(props) {
         style={page === "home" ? { textDecoration: "underline" } : null}
         className="pointer"
         id="home"
-        onClick={(e) => {choosePage(e.target); setOpen(!open)}}
+        onClick={(e) => {
+          choosePage(e.target);
+          setOpen(!open);
+        }}
       >
         Início
       </p>
@@ -49,7 +52,10 @@ function RightNav(props) {
         style={page === "projects" ? { textDecoration: "underline" } : null}
         className="pointer"
         id="projects"
-        onClick={(e) => {choosePage(e.target); setOpen(!open)}}
+        onClick={(e) => {
+          choosePage(e.target);
+          setOpen(!open);
+        }}
       >
         Projetos
       </p>
@@ -57,11 +63,19 @@ function RightNav(props) {
         style={page === "contact" ? { textDecoration: "underline" } : null}
         className="pointer"
         id="contact"
-        onClick={(e) => {choosePage(e.target); setOpen(!open)}}
+        onClick={(e) => {
+          choosePage(e.target);
+          setOpen(!open);
+        }}
       >
         Contato
       </p>
-      <a href="https://github.com/vinigofr" target="_blank" rel="noreferrer" id="github">
+      <a
+        href="https://github.com/vinigofr"
+        target="_blank"
+        rel="noreferrer"
+        id="github"
+      >
         <img
           alt="GitHub Link"
           style={{ width: "40px", height: "40px", color: "pink" }}

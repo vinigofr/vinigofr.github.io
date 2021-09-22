@@ -1,5 +1,5 @@
 import React from "react";
-import '../Styles/typewrite.css';
+import "../Styles/typewrite.css";
 
 function ViniciusTitle() {
   return (
