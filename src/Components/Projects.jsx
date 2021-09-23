@@ -1,10 +1,11 @@
 import React from "react";
 import allProjects from "../Helpers/allProject";
-
+import project from '../Images/projects.svg';
 function Projects() {
   return (
-    <div>
+    <>
       <h1>Projetos</h1>
+      <img src={project} className="main-page-image" alt="Imagem de pessoaas trabalhando em conjunto" />
       <div className="projects-section">
         {allProjects.map((project) => (
           <div className="project-card">
@@ -21,7 +22,7 @@ function Projects() {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 }
 

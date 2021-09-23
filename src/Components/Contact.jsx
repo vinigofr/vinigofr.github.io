@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { init, send } from "emailjs-com";
 import Loading from "./Nav/Loading";
 import verifyData from "../Helpers/verifyData";
-
+import contact from "../Images/contact.svg"
 init("user_3bguTCeUpXJpsAeCpvezS");
 
 function Contact() {
@@ -64,6 +64,9 @@ function Contact() {
   return (
     <div>
       <h1>Que tal conversarmos um pouco?</h1>
+      <div>
+        <img className="main-page-image" src={contact} alt="Foto de variados meios de comunicação"/>
+      </div>
       <form onSubmit={onSubmit} className="contact-forms">
         <label className="input-label">
           Como você se chama?
