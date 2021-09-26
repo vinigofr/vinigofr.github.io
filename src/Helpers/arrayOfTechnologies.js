@@ -44,7 +44,7 @@ const arrayOfTechnologies = [
   {
     name: "Jest",
     icon: jest,
-  },
+  }
 ];
 
 export default arrayOfTechnologies;

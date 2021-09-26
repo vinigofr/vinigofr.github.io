@@ -5,11 +5,9 @@ import Burger from "./Nav/Burger";
 
 export default function Header() {
   return (
-    <header className="home-header">
-      <div>
+    <header className="home-header">      
         <ViniciusTitle />
         <Burger />
-      </div>
     </header>
   );
 }

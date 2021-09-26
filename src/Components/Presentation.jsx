@@ -4,9 +4,9 @@ import arrayOfTechnologies from "../Helpers/arrayOfTechnologies";
 
 function Presentation() {
   return (
-    <div>
+    <>
       <h1 className="page-title">Prazer, me chamo Vinicius 👨🏻‍💻</h1>
-      <main>
+      <main className="presentation-container">
         <section style={{ "padding-bottom": "20px" }}className="presentation-section p1">
           <h3 className="centralize">Sou desenvolvedor de Software Front-End</h3>
           <img
@@ -19,6 +19,7 @@ function Presentation() {
             me tornar um Desenvolvedor de Software FullStack
           </h3>
         </section>
+        <span className="divider"></span>
         <section className="tech-section">
           <h3 className="p1 centralize">Ferramentas e tecnologias:</h3>
           <div className="tech-container">
@@ -30,7 +31,7 @@ function Presentation() {
           </div>
         </section>
       </main>
-    </div>
+    </>
   );
 }
 

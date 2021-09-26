@@ -19,10 +19,8 @@
 }
 
 .home-header {
-  position: absolute;
-  width: 100%;
-  height: 4rem;
   display: flex;
+  height: 4rem;
   justify-content: space-between;
   align-items: center;
   padding-left: 25px;
@@ -33,7 +31,105 @@
   padding: 0 0.5rem;
 }
 
+.centralize {
+  text-align: center;
+}
+
+@media screen and (min-width: 769px) {
+  .divider {
+    flex-grow: 1;
+    border-left: 2px solid rgba(0, 0, 0, 0.13);
+    margin: 5px;
+  }
+
+  .page-title {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .project-container {
+    display: flex;
+  }
+
+  .project-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project-card {
+    background-color: #7112b160;
+    border-radius: 10px;
+    margin: 20px 10px;
+    padding: 10px;
+    box-shadow: 0 0 25px 1px #00000059;
+    width: 40%;
+    /* max-width: 300px; */
+  }
+
+  .project-card h3 {
+    font-size: 35px;
+  }
+  
+  .presentation-container{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .tech-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .tech-container {
+    margin: auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .tech-card {
+    background-color: #bf89e6;
+    border-radius: 10px;
+    margin: 20px 10px;
+  }
+  
+  .tech-card img {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    max-width: 100px;
+  }
+
+  .main-page-image {
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-project-image {
+    width: 35%;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .divider {
+    display: none;
+  }
+
+  .home-header {
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+  }
+
   #github, #linkedin, #projects, #contact, #home {
     border-radius: 5px;
     padding: 10px;
@@ -148,10 +244,6 @@
     padding: 15px;
     background-color: #ffffff;
     border-radius: 10px;
-  }
-
-  .centralize {
-    text-align: center;
   }
 }
 
