@@ -4,7 +4,7 @@ import project from '../Images/projects.svg';
 function Projects() {
   return (
     <>
-      <h1>Projetos</h1>
+      <h1 className="page-title">Projetos</h1>
       <img src={project} className="main-page-image" alt="Imagem de pessoaas trabalhando em conjunto" />
       <div className="projects-section">
         {allProjects.map((project) => (

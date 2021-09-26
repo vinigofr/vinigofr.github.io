@@ -63,7 +63,7 @@ function Contact() {
   };
   return (
     <div>
-      <h1>Que tal conversarmos um pouco?</h1>
+      <h1 className="page-title">Que tal conversarmos um pouco?</h1>
       <div>
         <img className="main-page-image" src={contact} alt="Foto de variados meios de comunicação"/>
       </div>

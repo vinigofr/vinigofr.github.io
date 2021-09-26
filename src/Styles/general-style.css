@@ -1,3 +1,7 @@
+* {
+  font-family: 'Montserrat', 'Times';
+}
+
 .pointer:hover {
   cursor: pointer;
   color: #000000;
@@ -25,6 +29,10 @@
   background-color: #7112b1;
 }
 
+.p1 {
+  padding: 0 0.5rem;
+}
+
 @media screen and (max-width: 768px) {
   #github, #linkedin, #projects, #contact, #home {
     border-radius: 5px;
@@ -35,6 +43,11 @@
 
   .padding-content {
     padding-top: 5em;
+  }
+
+  .page-title {
+    font-size: 2rem;
+    text-align: center;
   }
 
   .projects-section {
@@ -58,7 +71,6 @@
   }
 
   .contact-forms {
-    /* background-color: #66026b; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,8 +110,8 @@
   }
 
   .input-label {
-    font-size: 17px;
-    font-family: 'Cabin', 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
   }
 
   .contact-forms button {
@@ -114,6 +126,32 @@
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .tech-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tech-card {
+    padding: 0px;
+    background-color: #bf89e6;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  .tech-card img {
+    width: 100px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+
+  .centralize {
+    text-align: center;
   }
 }
 
