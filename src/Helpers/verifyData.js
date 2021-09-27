@@ -8,4 +8,4 @@ export default function verifyData(data) {
     message.length <= 500 &&
     from_name
   );
-};
+}

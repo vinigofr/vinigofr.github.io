@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 // Referência: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader
 const StyleLoading = styled.div`
@@ -53,3 +54,7 @@ function Loading(props) {
 }
 
 export default Loading;
+
+Loading.propTypes = {
+  stat: PropTypes.bool.isRequired
+};

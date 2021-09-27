@@ -3,6 +3,7 @@ import MyContext from "../../ContextAPI/MyContext";
 import github from "../../icons/github.svg";
 import styled from "styled-components";
 import linkedin from "../../icons/linkedin.svg";
+import PropTypes from 'prop-types';
 
 const NewNav = styled.div`
   display: flex;
@@ -101,3 +102,8 @@ function RightNav(props) {
 }
 
 export default RightNav;
+
+RightNav.propTypes = {
+  open: PropTypes.bool.isRequired,
+  setOpen: PropTypes.func.isRequired
+}
