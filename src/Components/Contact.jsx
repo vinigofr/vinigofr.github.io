@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { init, send } from "emailjs-com";
 import Loading from "./Nav/Loading";
 import verifyData from "../Helpers/verifyData";
-import contact from "../Images/contact.svg"
+import contact from "../Images/contact.svg";
 init("user_3bguTCeUpXJpsAeCpvezS");
 
 function Contact() {
@@ -64,54 +64,55 @@ function Contact() {
   return (
     <div>
       <h1 className="page-title">Que tal conversarmos um pouco?</h1>
-      <div>
-        <img className="main-page-image" src={contact} alt="Foto de variados meios de comunicação"/>
+      <div className="contact-section">
+        <img className="main-contact-image" src={contact} alt="Foto de variados meios de comunicação" />
+        <span className="divider"></span>
+        <form onSubmit={onSubmit} className="contact-forms">
+          <label className="input-label">
+            Como você se chama?
+            <input
+              className="contact-input"
+              type="text"
+              name="from_name"
+              placeholder="Digite seu nome e sobrenome"
+              value={toSend.from_name}
+              onChange={handleChange}
+            />
+          </label>
+          <label className="input-label">
+            E agora, seu email para retorno
+            <input
+              className="contact-input"
+              type="text"
+              name="reply_to"
+              placeholder="Digite seu email"
+              value={toSend.reply_to}
+              onChange={handleChange}
+            />
+          </label>
+          <label className="input-label">
+            Deixa aqui um recadinho :D
+            <textarea
+              style={{ resize: "none" }}
+              rows="3"
+              cols="21"
+              className="contact-input"
+              type="text"
+              name="message"
+              placeholder="Pode ser um feedback, elogio, sugestão. Fique à vontade"
+              value={toSend.message}
+              onChange={handleChange}
+            />
+          </label>
+          <div>
+            <p style={{ color: `${!remaining.max ? "black" : "red"}` }}>
+              Caracteres restantes: {remaining.remainingText}
+            </p>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+        <Loading stat={stat} />
       </div>
-      <form onSubmit={onSubmit} className="contact-forms">
-        <label className="input-label">
-          Como você se chama?
-          <input
-            className="contact-input"
-            type="text"
-            name="from_name"
-            placeholder="Digite seu nome e sobrenome"
-            value={toSend.from_name}
-            onChange={handleChange}
-          />
-        </label>
-        <label className="input-label">
-          E agora, seu email para retorno
-          <input
-            className="contact-input"
-            type="text"
-            name="reply_to"
-            placeholder="Digite seu email"
-            value={toSend.reply_to}
-            onChange={handleChange}
-          />
-        </label>
-        <label className="input-label">
-          Deixa aqui um recadinho :D
-          <textarea
-            style={{ resize: "none" }}
-            rows="3"
-            cols="21"
-            className="contact-input"
-            type="text"
-            name="message"
-            placeholder="Pode ser um feedback, elogio, sugestão. Fique à vontade"
-            value={toSend.message}
-            onChange={handleChange}
-          />
-        </label>
-        <div>
-          <p style={{ color: `${!remaining.max ? "black" : "red"}` }}>
-            Caracteres restantes: {remaining.remainingText}
-          </p>
-        </div>
-        <button type="submit">Enviar</button>
-      </form>
-      <Loading stat={stat} />
     </div>
   );
 }

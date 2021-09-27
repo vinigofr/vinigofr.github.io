@@ -37,7 +37,6 @@
 
 @media screen and (min-width: 769px) {
   .divider {
-    flex-grow: 1;
     border-left: 2px solid rgba(0, 0, 0, 0.13);
     margin: 5px;
   }
@@ -64,7 +63,6 @@
     padding: 10px;
     box-shadow: 0 0 25px 1px #00000059;
     width: 40%;
-    /* max-width: 300px; */
   }
 
   .project-card h3 {
@@ -114,6 +112,66 @@
   .main-project-image {
     width: 35%;
   }
+
+  .main-contact-image {
+    width: 40%;
+  }
+
+  .contact-section {
+    display: flex;
+    padding-top: 20px;
+  }
+
+  .contact-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px;
+    margin: 0px 20px;
+    width: 100%;
+  }
+
+  .contact-input {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    margin: 10px 10px;
+    box-shadow: 0 0 10px 1px #00000059;
+    width: 150%;
+  }
+
+  /* Esse placeholder deve estar branco
+  para dar efeito no de baixo */
+  .contact-input::placeholder {
+    color: #ffffff;
+  }
+
+  .contact-input:focus {
+    transition: 0.3s;
+    outline: none;
+    background-color: #7112b1b6;
+    box-shadow: 0 0 10px 5px #7112b157;
+    color: #ffffff;
+  }
+
+  .contact-input:not(:focus) {
+    transition: 0.3s;
+  }
+
+  .input-label {
+    font-size: 15px;
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+  }
+
+  .contact-forms button {
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px 10px;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -222,6 +280,12 @@
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .main-contact-image {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
   }
 
   .tech-container {
