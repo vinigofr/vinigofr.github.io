@@ -1,5 +1,6 @@
 {
   "name": "vinigofr-portfolio",
+  "homepage": "http://vinigofr.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,7 +20,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --ext .js,.jsx src/"
+    "lint": "eslint --ext .js,.jsx src/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +43,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.32.0"
+    "eslint": "^7.32.0",
+    "gh-pages": "^3.2.3"
   }
 }
