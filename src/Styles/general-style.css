@@ -1,0 +1,317 @@
+* {
+  font-family: 'Montserrat', 'Times';
+}
+
+.pointer:hover {
+  cursor: pointer;
+  color: #000000;
+  transition: 0.2s;
+}
+
+.pointer:not(:hover) {
+  transition: 0.2s;
+}
+
+.header-options {
+  width: 500px;
+  justify-content: space-around;
+  color: whitesmoke;
+}
+
+.home-header {
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
+  background-color: #7112b1;
+}
+
+.p1 {
+  padding: 0 0.5rem;
+}
+
+.centralize {
+  text-align: center;
+}
+
+@media screen and (min-width: 769px) {
+  .divider {
+    border-left: 2px solid rgba(0, 0, 0, 0.13);
+    margin: 5px;
+  }
+
+  .page-title {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .project-container {
+    display: flex;
+  }
+
+  .project-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project-card {
+    background-color: #7112b160;
+    border-radius: 10px;
+    margin: 20px 10px;
+    padding: 10px;
+    box-shadow: 0 0 25px 1px #00000059;
+    width: 40%;
+  }
+
+  .project-card h3 {
+    font-size: 35px;
+  }
+  
+  .presentation-container{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .tech-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .tech-container {
+    margin: auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .tech-card {
+    background-color: #bf89e6;
+    border-radius: 10px;
+    margin: 20px 10px;
+  }
+  
+  .tech-card img {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    max-width: 100px;
+  }
+
+  .main-page-image {
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-project-image {
+    width: 35%;
+  }
+
+  .main-contact-image {
+    width: 40%;
+  }
+
+  .contact-section {
+    display: flex;
+    padding-top: 20px;
+  }
+
+  .contact-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px;
+    margin: 0px 20px;
+    width: 100%;
+  }
+
+  .contact-input {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    margin: 10px 10px;
+    box-shadow: 0 0 10px 1px #00000059;
+    width: 150%;
+  }
+
+  /* Esse placeholder deve estar branco
+  para dar efeito no de baixo */
+  .contact-input::placeholder {
+    color: #ffffff;
+  }
+
+  .contact-input:focus {
+    transition: 0.3s;
+    outline: none;
+    background-color: #7112b1b6;
+    box-shadow: 0 0 10px 5px #7112b157;
+    color: #ffffff;
+  }
+
+  .contact-input:not(:focus) {
+    transition: 0.3s;
+  }
+
+  .input-label {
+    font-size: 15px;
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+  }
+
+  .contact-forms button {
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px 10px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .divider {
+    display: none;
+  }
+
+  .home-header {
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+  }
+
+  #github, #linkedin, #projects, #contact, #home {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #8c4ab8;
+  }
+
+  .padding-content {
+    padding-top: 5em;
+  }
+
+  .page-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin:  0; */
+  }
+
+  .project-card {
+    width: 290px;
+    background-color: #7112b160;
+    border-radius: 10px;
+    margin: 20px 10px;
+    padding: 10px;
+    box-shadow: 0 0 25px 1px #00000059;
+  }
+
+  .project-card h3 {
+    font-size: 35px;
+  }
+
+  .contact-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 30px 30px;
+    margin: 0px 20px;
+  }
+
+  .contact-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px 10px;
+    box-shadow: 0 0 10px 1px #00000059;
+  }
+
+  /* Esse placeholder deve estar branco
+  para dar efeito no de baixo */
+  .contact-input::placeholder {
+    color: #ffffff;
+  }
+
+  .contact-input:focus {
+    transition: 0.3s;
+    outline: none;
+    background-color: #7112b1b6;
+    box-shadow: 0 0 10px 5px #7112b157;
+    color: #ffffff;
+  }
+
+  .contact-input:not(:focus) {
+    transition: 0.3s;
+  }
+
+  .input-label {
+    font-size: 15px;
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+  }
+
+  .contact-forms button {
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px 10px;
+  }
+
+  .main-page-image {
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-contact-image {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .tech-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tech-card {
+    padding: 0px;
+    background-color: #bf89e6;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  .tech-card img {
+    width: 100px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+}
+
+/* Deixar aqui uma ideia registrada:
+Ao passar o mouse em cima, a imagem sobrepõe
+todo o texto com um transform e zoom no hover
+talvez dê certo mudando o z-index do elemento */
