@@ -1,4 +1,20 @@
-1. GitHub e LinkedIn inline - By Alberto S. Candido
-2. Mais espaço entre os elementos do menu - By Alberto S. Candido
-3. Inserir Link para outras redes ao portfólio, como por exemplo o Discord. - By Vinicius Gouveia
-4. 
+1. By Alberto Candido = {
+  1.GitHub e LinkedIn inline
+  2. Mais espaço entre os elementos do menu
+}
+
+2. By Vinicius Gouveia = {
+  1. Inserir Link para outras redes ao portfólio, como por exemplo o Discord.
+}
+
+3. By Micaela Silva = {
+  1. Padronizar a escrita do site: Front-end e Back-End.
+  2. Melhor adaptação para telas menores
+  3. Primeiro texto introdutório de apresentação e depois as tecnologias.
+  4. Verificar se faz sentido utilizar a mesma paleta de cores nos ícones de tecnologias (mudança de ícones).
+  5. Hover em cima dos ícones, exibindo o nome da tecnologia (e talvez o link).
+  6. Mudar cor dos SVG das sessões.
+  7. Talvez seria interessante deixar os projetos espalhados por todo a página, não havendo divisões entre projetos e imagem da esquerda. Ou seja, tirar a imagem de "Projetos" e deixar apenas os projetos.
+  9. Colocar GitHub e LinkedIn próximos ao forms de contato.
+  10. Espeficar o que acontecerá com as informações enviadas.
+}
