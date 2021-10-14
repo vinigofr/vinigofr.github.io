@@ -23,11 +23,13 @@ function Presentation() {
         <section className="tech-section">
           <h3 className="p1 centralize">Ferramentas e tecnologias:</h3>
           <div className="tech-container">
-            {arrayOfTechnologies.map(({ name, icon }, index) => (
+            {
+              arrayOfTechnologies.map(({ name, icon }, index) => (
               <div className="tech-card" key={`${name}-${index}`}>
                 <img src={icon} alt={name} />
               </div>
-            ))}
+              ))
+            }
           </div>
         </section>
       </main>
