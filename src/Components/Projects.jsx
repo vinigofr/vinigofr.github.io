@@ -1,9 +1,11 @@
 import React from "react";
 import allProjects from "../Helpers/allProject";
 import project from "../Images/projects.svg";
+import Footer from "../Components/Footer";
+
 function Projects() {
   return (
-    <>
+    <div>
       <h1 className="page-title">Projetos</h1>
       <section className="project-container">
         <img
@@ -28,7 +30,8 @@ function Projects() {
           ))}
         </div>
       </section>
-    </>
+      <Footer />
+    </div>
   );
 }
 

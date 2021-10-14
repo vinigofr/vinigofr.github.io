@@ -1,6 +1,7 @@
 import React from "react";
 import programmer from "../Images/programmer.svg";
 import arrayOfTechnologies from "../Helpers/arrayOfTechnologies";
+import Footer from '../Components/Footer';
 
 function Presentation() {
   return (
@@ -33,6 +34,7 @@ function Presentation() {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }
