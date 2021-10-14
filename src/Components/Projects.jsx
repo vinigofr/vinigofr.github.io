@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 
 function Projects() {
   return (
-    <div>
+    <div style={{minHeight: '90vh'}}>
       <h1 className="page-title">Projetos</h1>
       <section className="project-container">
         <img

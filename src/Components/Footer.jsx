@@ -21,7 +21,7 @@ const socials = [
 
 function Footer() {
   return (
-    <footer style={{position: 'fixed', bottom: '0', width: '100vw'}}>
+    <footer className="footer">
       <div className="footer-title"> © 2021 Vinicius Gouveia </div>
       <div className="social-links">
         <ul className="social-network-list">

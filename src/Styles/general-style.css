@@ -104,17 +104,17 @@
 
   .main-page-image {
     display: flex;
-    width: 70%;
+    width: 25em;
     margin-left: auto;
     margin-right: auto;
   }
 
   .main-project-image {
-    width: 35%;
+    width: 25em;
   }
 
   .main-contact-image {
-    width: 30%;
+    width: 25em;
   }
 
   .contact-section {
@@ -175,13 +175,16 @@
     margin: 10px 10px;
   }
 
-  footer {
+  .footer {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     background-color: #7112b1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
-
+  
   .footer-title {
     color: white;
     font-size: 20px;
