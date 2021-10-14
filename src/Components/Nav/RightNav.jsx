@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import MyContext from "../../ContextAPI/MyContext";
 import github from "../../icons/github.svg";
 import styled from "styled-components";
-import linkedin from "../../icons/linkedin.svg";
+import linkedinWhite from "../../icons/linkedinWhite.svg";
 import PropTypes from 'prop-types';
 
 const NewNav = styled.div`
@@ -94,7 +94,7 @@ function RightNav(props) {
           alt="Linkedin Link"
           style={{ width: "40px", height: "40px" }}
           className="pointer"
-          src={linkedin}
+          src={linkedinWhite}
         />
       </a>
     </NewNav>

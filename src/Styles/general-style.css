@@ -175,7 +175,27 @@
     margin: 10px 10px;
   }
 
-}
+  footer {
+    display: flex;
+    background-color: #7112b1;
+  }
+
+  .footer-title {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .social-network-list {
+    list-style-type: none;
+    display: flex;
+  }
+
+  .social-network-icon {
+    margin: 10px;
+    width: 50px;
+  }
+  }
 
 @media screen and (max-width: 768px) {
   .divider {
