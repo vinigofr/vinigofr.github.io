@@ -3,6 +3,7 @@ import { init, send } from "emailjs-com";
 import Loading from "./Nav/Loading";
 import verifyData from "../Helpers/verifyData";
 import contact from "../Images/contact.svg";
+import Footer from "./Footer";
 init("user_3bguTCeUpXJpsAeCpvezS");
 
 function Contact() {
@@ -112,6 +113,7 @@ function Contact() {
         </form>
         <Loading stat={stat} />
       </div>
+      <Footer />
     </div>
   );
 }
