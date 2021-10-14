@@ -11,7 +11,6 @@ function Projects() {
           className="main-project-image"
           alt="Imagem de pessoaas trabalhando em conjunto"
         />
-        <span className="divider"></span>
         <div className="project-section">
           {allProjects.map((project, index) => (
             <div className="project-card" key={`${project.name}-${index}`}>

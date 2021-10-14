@@ -66,7 +66,6 @@ function Contact() {
       <h1 className="page-title">Que tal conversarmos um pouco?</h1>
       <div className="contact-section">
         <img className="main-contact-image" src={contact} alt="Foto de variados meios de comunicação" />
-        <span className="divider"></span>
         <form onSubmit={onSubmit} className="contact-forms">
           <label className="input-label">
             Como você se chama?
