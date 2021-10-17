@@ -344,6 +344,10 @@
     background-color: #ffffff;
     border-radius: 10px;
   }
+
+  .footer {
+    display: none;
+  }
 }
 
 /* Deixar aqui uma ideia registrada:
