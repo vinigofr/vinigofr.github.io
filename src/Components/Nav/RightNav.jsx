@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
 import MyContext from "../../ContextAPI/MyContext";
-import github from "../../icons/github.svg";
 import styled from "styled-components";
-import linkedinWhite from "../../icons/linkedinWhite.svg";
 import PropTypes from 'prop-types';
+import Socials from "../Socials";
 
 const NewNav = styled.div`
   display: flex;
@@ -71,32 +70,7 @@ function RightNav(props) {
       >
         Contato
       </p>
-      <a
-        href="https://github.com/vinigofr"
-        target="_blank"
-        rel="noreferrer"
-        id="github"
-      >
-        <img
-          alt="GitHub Link"
-          style={{ width: "40px", height: "40px", color: "pink" }}
-          className="pointer"
-          src={github}
-        />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/vinigofr/"
-        target="_blank"
-        rel="noreferrer"
-        id="linkedin"
-      >
-        <img
-          alt="Linkedin Link"
-          style={{ width: "40px", height: "40px" }}
-          className="pointer"
-          src={linkedinWhite}
-        />
-      </a>
+      <Socials />
     </NewNav>
   );
 }
