@@ -239,11 +239,10 @@
     text-align: center;
   }
 
-  .projects-section {
+  .project-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* margin:  0; */
   }
 
   .project-card {
@@ -317,6 +316,12 @@
   }
 
   .main-contact-image {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .main-project-image {
     display: flex;
     width: 50%;
     margin: 0 auto;
