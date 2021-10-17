@@ -120,6 +120,7 @@
   .contact-section {
     display: flex;
     padding-top: 20px;
+    /* align-items: center; */
     /* justify-content: center; */
     justify-content: space-evenly;
   }
@@ -184,6 +185,12 @@
     bottom: 0;
     width: 100%;
   }
+
+  .padding-content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
   
   .footer-title {
     color: white;
@@ -200,7 +207,7 @@
     margin: 10px;
     width: 50px;
   }
-  }
+}
 
 @media screen and (max-width: 768px) {
   .divider {

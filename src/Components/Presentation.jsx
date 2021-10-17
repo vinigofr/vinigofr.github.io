@@ -1,11 +1,10 @@
 import React from "react";
 import programmer from "../Images/programmer.svg";
 import arrayOfTechnologies from "../Helpers/arrayOfTechnologies";
-// import Footer from '../Components/Footer';
 
 function Presentation() {
   return (
-    <div className="">
+    <div>
       <h1 className="page-title">Prazer, me chamo Vinicius 👨🏻‍💻</h1>
       <main className="presentation-container">
         <section style={{ "padding-bottom": "20px" }}className="presentation-section p1">
@@ -34,7 +33,6 @@ function Presentation() {
           </div>
         </section>
       </main>
-      {/* <Footer /> */}
     </div>
   );
 }

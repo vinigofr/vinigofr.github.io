@@ -1,7 +1,7 @@
 import React from "react";
 import allProjects from "../Helpers/allProject";
 import project from "../Images/projects.svg";
-// import Footer from "../Components/Footer";
+import Footer from "../Components/Footer";
 
 function Projects() {
   return (
@@ -30,7 +30,7 @@ function Projects() {
           ))}
         </div>
       </section>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

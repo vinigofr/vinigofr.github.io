@@ -11,7 +11,7 @@ function Home() {
   const { page } = context;
 
   return (
-    <div>
+    <>
       <Header />
       <div className="padding-content">
         {page === "home" && <Presentation />}
@@ -19,7 +19,7 @@ function Home() {
         {page === "contact" && <Contact />}
       </div>
       <Footer />
-    </div>
+    </>
   );
 }
 
