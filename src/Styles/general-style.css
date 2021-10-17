@@ -35,6 +35,16 @@
   text-align: center;
 }
 
+.social-network-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.social-network-icon {
+  margin: 10px;
+  width: 40px;
+}
+
 @media screen and (min-width: 769px) {
   .divider {
     border-left: 2px solid rgba(0, 0, 0, 0.13);
@@ -199,14 +209,8 @@
     padding: 10px;
   }
 
-  .social-network-list {
-    list-style-type: none;
-    display: flex;
-  }
-
-  .social-network-icon {
-    margin: 10px;
-    width: 40px;
+  .social-links {
+    display: none;
   }
 }
 
@@ -224,7 +228,7 @@
     padding-left: 25px;
   }
 
-  #github, #linkedin, #projects, #contact, #home {
+  #projects, #contact, #home {
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
@@ -352,6 +356,13 @@
 
   .footer {
     display: none;
+  }
+
+  .social-network {
+    border-radius: 5px;
+    padding: 2px;
+    margin: 20px 5px 10px;
+    background-color: #8c4ab8;
   }
 }
 

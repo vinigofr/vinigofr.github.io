@@ -70,7 +70,9 @@ function RightNav(props) {
       >
         Contato
       </p>
-      <Socials />
+      <div className="social-links">
+        <Socials />
+      </div>
     </NewNav>
   );
 }

@@ -13,8 +13,7 @@ const socials = [
 
 function Socials() {
   return (
-    <div className="social-links">
-      <ul>
+      <ul className="social-network-list">
         {
         socials.map(({img, link, name}, i) => (
           <li key={name + i} className="social-network">
@@ -25,7 +24,6 @@ function Socials() {
         ))
         }
       </ul>
-    </div>
   )
 }
 
