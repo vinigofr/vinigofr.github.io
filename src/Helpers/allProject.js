@@ -1,33 +1,34 @@
+import ghUserFinder from '../projectImages/github-user-finder.png';
+import trivia from '../projectsImages/trivia.png';
+import recipesApp from '../projectsImages/recipes-app.png'
+
 const allProjects = [
   { 
     id: 1,
     name: 'App de Receitas',
     description: 'Projeto que consome várias APIs de comidas e bebidas',
-    image: 'https://i.imgur.com/7nj4Kjx.png',
+    image: recipesApp,
     type: 'front-end',
     technologies: ['React', 'ContextAPI', 'React-Router', 'Bootstrap'],
-    url: 'https://www.google.com.br',
-    ready: false,
+    url: 'https://vinigofr.github.io/recipes-app',
   },
   { 
     id: 2,
     name: 'Trivia',
     description: 'Projeto de pergunutas e respostas',
-    image: 'https://i.imgur.com/7nj4Kjx.png',
+    image: trivia,
     type: 'front-end',
     technologies: ['React', 'ContextAPI', 'React-Router'],
-    url: 'https://www.google.com.br',
-    ready: false,
+    url: 'https://vinigofr.github.io/trivia-project',
   },
   {
     id: 3,
     name: 'GitHub User Finder',
     description: "Projeto básico de front-end que consome uma API do GitHubs",
-    image: 'link',
+    image: ghUserFinder,
     type: 'front-end',
     technologies: ['React', 'ContextAPI'],
-    url: 'link',
-    ready: false
+    url: 'https://vinigofr.github.io/github-user-finder',
   },
   {
     id: 4,
@@ -36,8 +37,7 @@ const allProjects = [
     image: 'link',
     type: 'front-end',
     technologies: ['HTML', 'CSS', 'Bootstrap', 'JS ES6'],
-    url: 'link',
-    ready: false
+    url: 'https://vinigofr.github.io/todo-list',
   }
 ]
 
