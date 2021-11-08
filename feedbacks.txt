@@ -6,6 +6,7 @@
 2. By Vinicius Gouveia = {
   1. Inserir Link para outras redes ao portfólio, como por exemplo o Discord.
   2. Deixar os títulos das sessões com fundo roxo, fonte branca. 🟢
+  3. Inserir PopUp nas tecnologias usadas (https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_arrow_bottom)
 }
 
 3. By Micaela Silva = {
