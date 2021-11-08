@@ -1,5 +1,5 @@
 import React from 'react'
-import instagram from "../icons/instagram.png";
+import instagram from "../icons/instagram-white.png";
 import linkedInWhite from "../icons/linkedinWhite.svg";
 import github from "../icons/github.svg";
 import youtube from "../icons/youtube.png";
