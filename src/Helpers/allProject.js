@@ -19,25 +19,25 @@ const allProjects = [
     url: 'https://www.google.com.br',
     ready: false,
   },
-  { 
-    id: 1,
-    name: 'App de Receitas',
-    description: 'Projeto que consome várias APIs de comidas e bebidas',
-    image: 'https://i.imgur.com/7nj4Kjx.png',
+  {
+    id: 3,
+    name: 'GitHub User Finder',
+    description: "Projeto básico de front-end que consome uma API do GitHubs",
+    image: 'link',
     type: 'front-end',
-    technologies: ['React', 'ContextAPI', 'React-Router', 'Bootstrap'],
-    url: 'https://www.google.com.br',
-    ready: false,
+    technologies: ['React', 'ContextAPI'],
+    url: 'link',
+    ready: false
   },
-  { 
-    id: 2,
-    name: 'Trivia',
-    description: 'Projeto de pergunutas e respostas',
-    image: 'https://i.imgur.com/7nj4Kjx.png',
+  {
+    id: 4,
+    name: 'Todo List',
+    description: "Projeto feito com JS Vanilla que simula uma Todo List",
+    image: 'link',
     type: 'front-end',
-    technologies: ['React', 'ContextAPI', 'React-Router'],
-    url: 'https://www.google.com.br',
-    ready: false,
+    technologies: ['HTML', 'CSS', 'Bootstrap', 'JS ES6'],
+    url: 'link',
+    ready: false
   }
 ]
 
