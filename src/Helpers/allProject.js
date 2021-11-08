@@ -1,6 +1,6 @@
-import ghUserFinder from '../projectImages/github-user-finder.png';
 import trivia from '../projectsImages/trivia.png';
-import recipesApp from '../projectsImages/recipes-app.png'
+import recipesApp from '../projectsImages/recipes-app.png';
+import ghUserFinder from '../projectsImages/github-user-finder.png';
 
 const allProjects = [
   { 
