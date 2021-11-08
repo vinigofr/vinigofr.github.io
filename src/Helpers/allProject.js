@@ -12,6 +12,7 @@ const allProjects = [
     type: 'front-end',
     technologies: ['React', 'ContextAPI', 'React-Router', 'Bootstrap'],
     url: 'https://vinigofr.github.io/recipes-app',
+    repo: 'https://github.com/vinigofr/recipes-app'
   },
   { 
     id: 2,
@@ -21,6 +22,7 @@ const allProjects = [
     type: 'front-end',
     technologies: ['React', 'ContextAPI', 'React-Router'],
     url: 'https://vinigofr.github.io/trivia-project',
+    repo: 'https://github.com/vinigofr/trivia-project'
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ const allProjects = [
     type: 'front-end',
     technologies: ['React', 'ContextAPI'],
     url: 'https://vinigofr.github.io/github-user-finder',
+    repo: 'https://github.com/vinigofr/github-user-finder'
   },
   {
     id: 4,
@@ -39,6 +42,7 @@ const allProjects = [
     type: 'front-end',
     technologies: ['HTML', 'CSS', 'Bootstrap', 'JS ES6'],
     url: 'https://vinigofr.github.io/todo-list',
+    repo: 'https://github.com/vinigofr/todo-list'
   }
 ]
 
