@@ -5,16 +5,22 @@
 
 2. By Vinicius Gouveia = {
   1. Inserir Link para outras redes ao portfólio, como por exemplo o Discord.
+  2. Deixar os títulos das sessões com fundo roxo, fonte branca. 🟢
+  3. Inserir PopUp nas tecnologias usadas (https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_arrow_bottom)
 }
 
 3. By Micaela Silva = {
   1. Padronizar a escrita do site: Front-end e Back-End.
-  2. Melhor adaptação para telas menores
+  2. Melhor adaptação para telas menores (desktop)
   3. Primeiro texto introdutório de apresentação e depois as tecnologias.
   4. Verificar se faz sentido utilizar a mesma paleta de cores nos ícones de tecnologias (mudança de ícones).
   5. Hover em cima dos ícones, exibindo o nome da tecnologia (e talvez o link).
   6. Mudar cor dos SVG das sessões.
   7. Talvez seria interessante deixar os projetos espalhados por todo a página, não havendo divisões entre projetos e imagem da esquerda. Ou seja, tirar a imagem de "Projetos" e deixar apenas os projetos.
-  9. Colocar GitHub e LinkedIn próximos ao forms de contato.
+  9. Colocar GitHub e LinkedIn próximos ao forms de contato. 🟢
   10. Espeficar o que acontecerá com as informações enviadas.
+}
+
+4. By Matheus Alexandre = {
+  1. Cor do botão da área de forms.
 }

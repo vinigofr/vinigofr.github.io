@@ -4,7 +4,7 @@ import arrayOfTechnologies from "../Helpers/arrayOfTechnologies";
 
 function Presentation() {
   return (
-    <>
+    <div>
       <h1 className="page-title">Prazer, me chamo Vinicius 👨🏻‍💻</h1>
       <main className="presentation-container">
         <section style={{ "padding-bottom": "20px" }}className="presentation-section p1">
@@ -23,15 +23,17 @@ function Presentation() {
         <section className="tech-section">
           <h3 className="p1 centralize">Ferramentas e tecnologias:</h3>
           <div className="tech-container">
-            {arrayOfTechnologies.map(({ name, icon }, index) => (
+            {
+              arrayOfTechnologies.map(({ name, icon }, index) => (
               <div className="tech-card" key={`${name}-${index}`}>
                 <img src={icon} alt={name} />
               </div>
-            ))}
+              ))
+            }
           </div>
         </section>
       </main>
-    </>
+    </div>
   );
 }
 

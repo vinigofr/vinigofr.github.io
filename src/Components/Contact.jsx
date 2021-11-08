@@ -66,11 +66,10 @@ function Contact() {
       <h1 className="page-title">Que tal conversarmos um pouco?</h1>
       <div className="contact-section">
         <img className="main-contact-image" src={contact} alt="Foto de variados meios de comunicação" />
-        <span className="divider"></span>
-        <form onSubmit={onSubmit} className="contact-forms">
+        <form onSubmit={onSubmit} className="contact-forms" autoComplete="off">
           <label className="input-label">
             Como você se chama?
-            <input
+            <input autoComplete="off"
               className="contact-input"
               type="text"
               name="from_name"
@@ -81,7 +80,7 @@ function Contact() {
           </label>
           <label className="input-label">
             E agora, seu email para retorno
-            <input
+            <input autoComplete="off"
               className="contact-input"
               type="text"
               name="reply_to"
@@ -113,6 +112,7 @@ function Contact() {
         </form>
         <Loading stat={stat} />
       </div>
+      {/* <Footer /> */}
     </div>
   );
 }
