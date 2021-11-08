@@ -85,6 +85,8 @@
   }
 
   .project-card-image {
+    /* Sobre object-fit
+    https://pt.stackoverflow.com/questions/32936/reduzir-o-tamanho-de-uma-imagem-e-manter-a-propor%C3%A7%C3%A3o-com-css */
     object-fit: cover;
     width: 200px;
     height: 200px;
