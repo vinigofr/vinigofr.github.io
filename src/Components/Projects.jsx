@@ -13,10 +13,10 @@ function Projects() {
               <h3>{project.name}</h3>
               <p>{project.description}</p>
               <div className="access-links">
-              <a href={project.url} target="_blank" rel="noreferrer">
-                Acessar projeto
-              </a>
-              <a>Acessar repositório</a>
+                <a href={project.url} target="_blank" rel="noreferrer">
+                  Acessar projeto
+                </a>
+                <a href={project.repo} target="_blank" rel="noreferrer">Acessar repositório</a>
               </div>
               <div className="project-image-container">
                 <img src={project.image} alt="Imagem do projeto" className="project-card-image" />
