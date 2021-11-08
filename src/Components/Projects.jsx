@@ -21,10 +21,7 @@ function Projects() {
               <div className="project-image-container">
                 <img src={project.image} alt="Imagem do projeto" className="project-card-image" />
               </div>
-              <p>Tipo do projeto: {`${project.type}`}</p>
-              <p>
-                Tecnologias utilizadas: {`${project.technologies.join(", ")}`}
-              </p>
+              <p>{`${project.type} | ${project.technologies.join(", ")}`}</p>
             </div>
           ))}
         </div>

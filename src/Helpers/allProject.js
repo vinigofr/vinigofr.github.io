@@ -7,9 +7,9 @@ const allProjects = [
   { 
     id: 1,
     name: 'App de Receitas',
-    description: 'Projeto que consome várias APIs de comidas e bebidas',
+    description: 'Consumindo vários endpoints de comidas e bebidas',
     image: recipesApp,
-    type: 'front-end',
+    type: 'Front-end',
     technologies: ['React', 'ContextAPI', 'React-Router', 'Bootstrap'],
     url: 'https://vinigofr.github.io/recipes-app',
     repo: 'https://github.com/vinigofr/recipes-app'
@@ -19,7 +19,7 @@ const allProjects = [
     name: 'Trivia',
     description: 'Projeto de pergunutas e respostas',
     image: trivia,
-    type: 'front-end',
+    type: 'Front-end',
     technologies: ['React', 'ContextAPI', 'React-Router'],
     url: 'https://vinigofr.github.io/trivia-project',
     repo: 'https://github.com/vinigofr/trivia-project'
@@ -27,9 +27,9 @@ const allProjects = [
   {
     id: 3,
     name: 'GitHub User Finder',
-    description: "Projeto básico de front-end que consome uma API do GitHubs",
+    description: "Projeto que consome uma API do GitHub",
     image: ghUserFinder,
-    type: 'front-end',
+    type: 'Front-end',
     technologies: ['React', 'ContextAPI'],
     url: 'https://vinigofr.github.io/github-user-finder',
     repo: 'https://github.com/vinigofr/github-user-finder'
@@ -39,7 +39,7 @@ const allProjects = [
     name: 'Todo List',
     description: "Projeto feito com JS Vanilla que simula uma Todo List",
     image: todoList,
-    type: 'front-end',
+    type: 'Front-end',
     technologies: ['HTML', 'CSS', 'Bootstrap', 'JS ES6'],
     url: 'https://vinigofr.github.io/todo-list',
     repo: 'https://github.com/vinigofr/todo-list'
