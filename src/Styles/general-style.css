@@ -119,10 +119,6 @@
     margin-right: auto;
   }
 
-  .main-project-image {
-    width: 25em;
-  }
-
   .main-contact-image {
     width: 25em;
   }
@@ -321,12 +317,6 @@
   }
 
   .main-contact-image {
-    display: flex;
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  .main-project-image {
     display: flex;
     width: 50%;
     margin: 0 auto;

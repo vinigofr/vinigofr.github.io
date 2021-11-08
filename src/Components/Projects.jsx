@@ -1,6 +1,5 @@
 import React from "react";
 import allProjects from "../Helpers/allProject";
-import project from "../Images/projects.svg";
 import Footer from "../Components/Footer";
 
 function Projects() {
@@ -8,11 +7,6 @@ function Projects() {
     <div>
       <h1 className="page-title">Projetos</h1>
       <section className="project-container">
-        <img
-          src={project}
-          className="main-project-image"
-          alt="Imagem de pessoaas trabalhando em conjunto"
-        />
         <div className="project-section">
           {allProjects.map((project, index) => (
             <div className="project-card" key={`${project.name}-${index}`}>
