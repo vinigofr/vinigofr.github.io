@@ -49,6 +49,16 @@
   color: white;
 }
 
+.access-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.access-links a:hover {
+  text-shadow: white 0 0 10px;
+  transition: 255ms;
+}
+
 @media screen and (min-width: 769px) {
   .divider {
     border-left: 2px solid rgba(0, 0, 0, 0.13);
@@ -110,6 +120,9 @@
   }
 
   .access-links {
+    padding: 10px;
+    background-color: #bb26e06b;
+    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
