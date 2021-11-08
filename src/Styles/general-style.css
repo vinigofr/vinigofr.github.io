@@ -79,8 +79,14 @@
     font-size: 35px;
   }
 
+  .project-image-container {
+    display: flex;
+    justify-content: center;
+  }
+
   .project-card-image {
-    width: 100%;
+    object-fit: cover;
+    width: 200px;
     height: 200px;
     border-radius: 10px;
   }
@@ -90,7 +96,7 @@
     width: 100%;
     margin-top: 50px;
   }
-
+  
   .tech-section {
     display: flex;
     flex-direction: column;

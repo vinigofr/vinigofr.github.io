@@ -15,7 +15,9 @@ function Projects() {
               <a href={project.url} target="_blank" rel="noreferrer">
                 Acessar projeto
               </a>
-              <img src={project.image} alt="Imagem do projeto" className="project-card-image" />
+              <div className="project-image-container">
+                <img src={project.image} alt="Imagem do projeto" className="project-card-image" />
+              </div>
               <p>Tipo do projeto: {`${project.type}`}</p>
               <p>
                 Tecnologias utilizadas: {`${project.technologies.join(", ")}`}

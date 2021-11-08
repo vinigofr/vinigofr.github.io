@@ -1,6 +1,7 @@
 import trivia from '../projectsImages/trivia.png';
 import recipesApp from '../projectsImages/recipes-app.png';
 import ghUserFinder from '../projectsImages/github-user-finder.png';
+import todoList from '../projectsImages/todo-list.png'
 
 const allProjects = [
   { 
@@ -34,7 +35,7 @@ const allProjects = [
     id: 4,
     name: 'Todo List',
     description: "Projeto feito com JS Vanilla que simula uma Todo List",
-    image: 'link',
+    image: todoList,
     type: 'front-end',
     technologies: ['HTML', 'CSS', 'Bootstrap', 'JS ES6'],
     url: 'https://vinigofr.github.io/todo-list',
