@@ -26,7 +26,7 @@ const allProjects = [
   },
   {
     id: 3,
-    name: 'GitHub User Finder',
+    name: 'GH User Finder',
     description: "Projeto que consome uma API do GitHub",
     image: ghUserFinder,
     type: 'Front-end',

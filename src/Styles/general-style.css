@@ -54,16 +54,6 @@
   color: white;
 }
 
-.access-links a:hover {
-  text-shadow: white 0 0 10px;
-  transition: 255ms;
-  transform: scale(1.05);
-}
-
-.access-links a:not(:hover) {
-  transition: 255ms;
-}
-
 @media screen and (min-width: 769px) {
   .divider {
     border-left: 2px solid rgba(0, 0, 0, 0.13);
@@ -133,6 +123,16 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 20px 10px;
+  }
+
+  .access-links a:hover {
+    text-shadow: white 0 0 10px;
+    transition: 255ms;
+    transform: scale(1.05);
+  }
+  
+  .access-links a:not(:hover) {
+    transition: 255ms;
   }
   
   .presentation-container{
@@ -300,7 +300,7 @@
 
   .project-card {
     width: 290px;
-    background-color: #7112b160;
+    background-color: #7112b1;
     border-radius: 10px;
     margin: 20px 10px;
     padding: 10px;
@@ -308,7 +308,38 @@
   }
 
   .project-card h3 {
-    font-size: 35px;
+    font-size: 30px;
+  }
+
+  .project-image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-card-image {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+
+  .access-links {
+    padding: 10px;
+    background-color: #bb26e06b;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px 05px;
+  }
+
+  .access-links a {
+    margin: 10px;
+  }
+
+  .access-links a:hover {
+    text-decoration: underline;
   }
 
   .contact-forms {
