@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main div {
+  margin-top: 16px;
+}
+
+.section__content {
+  margin: 0 32px;
+  max-width: 100vh;
+}
+
+.section__paragraph {
+  margin: 16px 0;
+}
